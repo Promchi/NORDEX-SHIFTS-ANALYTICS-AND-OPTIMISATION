@@ -118,22 +118,6 @@ DIVIDE(
 
 ---
 
-## 📊 Dashboards
-
-![Performance Dashboard](dashboards/Performance_Dashboard.png)
-
-
-### 2. Quality Control Dashboard
-
-![Quality Control Dashboard](dashboards/Quality_Control_Dashboard.png)
-
-
-![Maintenance Dashboard](dashboards/Maintenance_Dashboard.png)
-
-
-![Operators Dashboard](dashboards/Operators_Dashboard.png)
-
-
 ## 🌍 SDG 9 Advocacy
 
 This project aligns with **UN Sustainable Development Goal 9 — Industry, Innovation and Infrastructure**. By leveraging data analytics to drive smarter manufacturing decisions, advance industrial resilience, close efficiency gaps and support sustainable industrialisation.
