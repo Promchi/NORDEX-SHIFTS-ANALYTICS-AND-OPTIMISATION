@@ -1,20 +1,13 @@
 # 🏭 NorDex Manufacturing — Shift Performance Analytics and Optimisation
 
-> **Cross-Functional Analytics Project | Power BI | DAX | Power Query | SQLite3 | Industry 4.0**
-
----
-
-## 📁 Project Files
+> **Cross-Functional Analytics Project | Power BI | DAX | Power Query | SQLite3**
 
 🔗 **Full Project (Dashboards, Data, Documentation, Presentation):** [Google Drive](https://drive.google.com/drive/folders/1N2BLIqKEnG_SUG0A7qtktFtwjUYiNV1e?usp=sharing)
 
 ---
-
-## 📌 Project Overview
-
 This project delivers a comprehensive analytics solution for **NorDex Manufacturing**, a cross-functional initiative developed collaboratively by Business Analysts, Data Analysts and Data Scientists.
 
-The goal was to analyse shift performance across 3 production shifts, benchmark key metrics against **Industry 4.0 and automotive manufacturing standards**, and deliver actionable insights through 4 interactive Power BI dashboards.
+As the Data Analyst, goal was to analyse shift performance across 3 production shifts, benchmark key metrics against **Industry 4.0 and automotive manufacturing standards**, and deliver actionable insights through 4 interactive Power BI dashboards to optimise the operations of the manufacturing firm and maximise production output.
 
 ---
 
@@ -31,43 +24,9 @@ The goal was to analyse shift performance across 3 production shifts, benchmark 
 
 ---
 
-## 🗂️ Data Model — Star Schema
-
-### Fact Tables
-| Table | Granularity | Key Measures |
-|-------|-------------|--------------|
-| `Production_Log` | Per production event | units_produced, defect_count, cycle_time_avg |
-| `Machine_Log` | Per machine activity | runtime_hours, downtime_minutes |
-| `Maintenance_Records` | Per maintenance event | downtime_minutes, issue_type |
-| `Quality_Control` | Per quality inspection | inspection_result, defect_type, severity |
-| `Environmental_Data` | Per environmental reading | temperature, humidity |
-
-### Dimension Tables
-| Table | Primary Key | Describes |
-|-------|-------------|-----------|
-| `Shift_Master` | shift_id | Shifts |
-| `Machine_Dim` | machine_id | Machines |
-| `Operator_Assignment` | operator_id | Operators |
-
----
-
-## 🧹 Data Cleaning & Transformation
-
-All cleaning and transformation was done in **Power Query (M Language)**:
-
-- ✅ Removed null primary keys from `Maintenance_Records`
-- ✅ Replaced null dates with `1900-01-01` placeholder in `Production_Log`
-- ✅ Removed duplicates using all columns in `Machine_Log`
-- ✅ Disabled flat file from loading to prevent ambiguous relationships
-- ✅ Added `date` column to `Machine_Log` from source for correct slicer filtering
-- ✅ Created `machine_shift_key` composite key for data integrity
-- ✅ Built Date dimension table for time intelligence
-
----
-
 ## 📐 KPI Framework
 
-All KPIs benchmarked against **Industry 4.0 and Automotive Manufacturing Standards**:
+KPIs benchmarked against **Industry 4.0 and Automotive Manufacturing Standards**:
 
 | KPI | Formula | 🟢 Green | 🟡 Yellow | 🔴 Red |
 |-----|---------|---------|---------|------|
@@ -83,7 +42,7 @@ All KPIs benchmarked against **Industry 4.0 and Automotive Manufacturing Standar
 
 ---
 
-## ⚙️ Key DAX Measures
+## Key DAX Measures
 
 ```dax
 -- Availability %
@@ -130,7 +89,7 @@ DIVIDE(
 
 ---
 
-## 📈 Key Findings
+## Key Findings
 
 ### Overall Performance vs Industry 4.0 Benchmarks
 
@@ -161,93 +120,20 @@ DIVIDE(
 
 ## 📊 Dashboards
 
-### 1. Performance Dashboard
-> *Audience: Senior Management and Supervisors*
-
-Tracks overall operational efficiency including OEE and its 3 components — Availability, Performance and Quality — alongside Output per Hour and Average Cycle Time.
-
 ![Performance Dashboard](dashboards/Performance_Dashboard.png)
 
----
 
 ### 2. Quality Control Dashboard
-> *Audience: Quality Control Team and Engineers*
-
-Monitors quality metrics including Defect Rate, First Pass Yield and Rework Rate across machines, shifts and operators — benchmarked against automotive industry standards.
 
 ![Quality Control Dashboard](dashboards/Quality_Control_Dashboard.png)
 
----
-
-### 3. Maintenance Dashboard
-> *Audience: Maintenance Engineers and Operations Managers*
-
-Analyses machine downtime, issue type distribution and maintenance patterns to identify root causes and recurring failure points.
 
 ![Maintenance Dashboard](dashboards/Maintenance_Dashboard.png)
 
----
-
-### 4. Operators Dashboard
-> *Audience: HR, Shift Supervisors and Operations Managers*
-
-Examines operator performance, skill distribution and productivity by experience level and shift — highlighting workforce gaps and training opportunities.
 
 ![Operators Dashboard](dashboards/Operators_Dashboard.png)
 
----
-
-### Dashboard Features
-- Synchronised slicers — Date, Shift and Machine across all 4 dashboards
-- Traffic light conditional formatting aligned to Industry 4.0 benchmarks
-- KPI cards with actual vs target and distance to goal
-- Drill-through capabilities for detailed analysis
-
----
-
-## 💡 Recommendations
-
-1. **Close the OEE Performance Gap** — root cause analysis on Performance % at 64%
-2. **Investigate Night Shift Underperformance** — staffing, supervision and machine allocation review
-3. **Implement Mandatory Maintenance Logging** — every downtime event must trigger a maintenance record
-4. **Reduce Defect Rate** — stricter QC checkpoints and machine level intervention
-5. **Improve Data Integrity at Source** — automated validation rules at point of data capture
-6. **Adopt Real Time Machine Monitoring** — IoT enabled monitoring in line with Industry 4.0
-7. **Invest in Operator Training** — structured programme aligned to skill categories and experience levels
-
----
-
-## 🛠️ Tools & Technologies
-
-| Tool | Purpose |
-|------|---------|
-| Microsoft Power BI | Data modelling, KPI calculation, dashboards |
-| Power Query (M Language) | Data cleaning and transformation |
-| DAX | KPI measures and calculated columns |
-| SQLite3 | Source database |
-| Microsoft PowerPoint | Presentation of findings |
-| Microsoft Word | Project documentation |
-
----
 
 ## 🌍 SDG 9 Advocacy
 
-This project aligns with **UN Sustainable Development Goal 9 — Industry, Innovation and Infrastructure**. By leveraging data analytics to drive smarter manufacturing decisions, this project demonstrates how digital tools can advance industrial resilience, close efficiency gaps and support sustainable industrialisation.
-
----
-
-
-
----
-
-## 👤 Author
-
-**Promise Ezeike**
-Data Analyst & Consultant @ AMDARI
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/)
-
----
-
-*This project was developed as part of a cross-functional analytics programme at AMDARI.*
+This project aligns with **UN Sustainable Development Goal 9 — Industry, Innovation and Infrastructure**. By leveraging data analytics to drive smarter manufacturing decisions, advance industrial resilience, close efficiency gaps and support sustainable industrialisation.
