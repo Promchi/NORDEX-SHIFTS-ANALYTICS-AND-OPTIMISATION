@@ -1,4 +1,4 @@
-# 🏭 NorDex Manufacturing — Shift Performance Analytics and Optimisation
+# NorDex Manufacturing - Manufacturing Shifts Performance Analytics and Optimisation
 
 > **Cross-Functional Analytics Project | Power BI | DAX | Power Query | SQLite3**
 
