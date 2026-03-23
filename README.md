@@ -26,16 +26,6 @@ The goal was to analyse shift performance across 3 production shifts, benchmark 
 
 ---
 
-## 📊 Dataset
-
-| Metric | Value |
-|--------|-------|
-| Total Production Events | 13,650 |
-| Date Range | 92 days |
-| Shifts | 3 (Morning, Evening, Night) |
-| Machines | 50 |
-| Operators | 110 |
-| Source | SQLite3 Database |
 
 🔗 **Original Data Source:** [Google Drive](https://drive.google.com/file/d/1JOyqdfCbdGJODTWUXQ8BqCQprSrLy_d8/view?usp=drive_link)
 
@@ -58,7 +48,6 @@ The goal was to analyse shift performance across 3 production shifts, benchmark 
 | `Shift_Master` | shift_id | Shifts |
 | `Machine_Dim` | machine_id | Machines |
 | `Operator_Assignment` | operator_id | Operators |
-| `Date Table` | Date | Time intelligence |
 
 ---
 
@@ -152,7 +141,6 @@ DIVIDE(
 | Performance % | 64.42% | 95% | 🔴 Critical |
 | Quality % | 96.86% | 97% | 🟡 Warning |
 | Defect Rate % | 3.09% | 1% | 🔴 Critical |
-| Total Units Produced | 8.79M | 13.65M | 🔴 Critical |
 
 ### Shift Performance Comparison
 
@@ -172,10 +160,6 @@ DIVIDE(
 ---
 
 ## 📊 Dashboards
-
-Four interactive Power BI dashboards were developed, each targeting a distinct audience and business question:
-
----
 
 ### 1. Performance Dashboard
 > *Audience: Senior Management and Supervisors*
