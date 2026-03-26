@@ -40,6 +40,14 @@ KPIs benchmarked against **Industry 4.0 and Automotive Manufacturing Standards**
 | First Pass Yield % | Pass Inspections / Total | ≥97% | 94-96% | <94% |
 | Rework Rate % | Rework / Total Units | ≤1.5% | 1.5-3% | >3% |
 
+--- 
+Dashoards
+
+![Performance Dashboard](assets/Performance_Dashboard.png)
+![Quality Control Dashboard](assets/Quality_Control_Dashboard.png)
+![Maintenance Dashboard](assets/Maintenance_Dashboard.png)
+![Operators Dashboard](assets/Operators_Dashboard.png)
+
 ---
 
 ## Key DAX Measures
@@ -121,3 +129,4 @@ DIVIDE(
 ## 🌍 SDG 9 Advocacy
 
 This project aligns with **UN Sustainable Development Goal 9 — Industry, Innovation and Infrastructure**. By leveraging data analytics to drive smarter manufacturing decisions, advance industrial resilience, close efficiency gaps and support sustainable industrialisation.
+
