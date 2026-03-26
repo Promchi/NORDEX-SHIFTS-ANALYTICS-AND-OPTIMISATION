@@ -43,10 +43,10 @@ KPIs benchmarked against **Industry 4.0 and Automotive Manufacturing Standards**
 --- 
 Dashoards
 
-![Performance Dashboard](assets/Performance_Dashboard.png)
-![Quality Control Dashboard](assets/Quality_Control_Dashboard.png)
-![Maintenance Dashboard](assets/Maintenance_Dashboard.png)
-![Operators Dashboard](assets/Operators_Dashboard.png)
+![Performance Dashboard](Assets/Performance_Dashboard.png)
+![Quality Control Dashboard](Assets/Quality_Control_Dashboard.png)
+![Maintenance Dashboard](Assets/Maintenance_Dashboard.png)
+![Operators Dashboard](Assets/Operators_Dashboard.png)
 
 ---
 
